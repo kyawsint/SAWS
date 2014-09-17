@@ -1,3 +1,5 @@
+	/* --- select Query --- */
+
 -- Q 1-a
 select * from shippers
 
@@ -150,3 +152,94 @@ having sum(od.unitprice*od.quantity)>
 select cus.customerid, sum(od.unitprice*od.quantity) from orders o, customers cus, [order details] od
 where o.customerid=cus.customerid and o.orderid=od.orderid and year(o.orderdate)='1997'
 group by cus.customerid
+
+
+	/* --- End Select Query --- */
+
+	/* --- Create, Update, Delete --- */
+	-- Use DafestyVideo
+
+-- Q 1
+create table MemberCategories
+(
+	MemberCategory nvarchar(2) not null,
+	MemberCatDescription nvarchar(200) not null,
+	primary key (MemberCategory)
+)
+
+-- Q 2
+insert into MemberCategories(MemberCategory,MemberCatDescription) 
+	values('A','Class A Members'),('B','Class B Members'),('C','Class C Members')
+
+-- Q 3
+create table GoodCustomers
+(
+	CustomerName nvarchar(50),
+	Address nvarchar(65),
+	PhoneNumber nvarchar(9),
+	MemberCategory nvarchar(2)
+	primary key (CustomerName, PhoneNumber),
+	foreign key (MemberCategory) references MemberCategories(MemberCategory)
+)
+
+-- Q 4
+insert into GoodCustomers(CustomerName, Address, PhoneNumber, MemberCategory) 
+select CustomerName, Address, PhoneNumber, MemberCategory from Customers where MemberCategory in ('A','B')
+
+-- Q 5
+insert into GoodCustomers(CustomerName, PhoneNumber, MemberCategory) 
+	values('Tracy Tan', '736572', 'B')
+	
+-- Q 6
+insert into GoodCustomers values ('Grace Leong', '15 Bukit Purmei Road, Singapore 0904', '278865', 'A')
+
+-- Q 7
+insert into GoodCustomers values('Lynn Lim', '15 Bukit Purmei Road, Singapore 0904', '278865', 'P')
+
+-- Q 8
+update GoodCustomers set address='22 Bukit Purmei Road, Singapore 0904' where customername='Grace Leong'
+
+-- Q 9
+update goodcustomers set membercategory='B'
+where customername=(select customername from customers where customerid=5108)
+
+-- Q 10
+delete from goodcustomers where customername='Grace Leong'
+
+-- Q 11
+delete from goodcustomers where membercategory='B'
+
+-- Q 12
+alter table goodcustomers
+add FaxNumber nvarchar(80)
+
+-- Q 13
+alter table goodcustomers
+alter column Address nvarchar(80)
+
+-- Q 14
+alter table goodcustomers
+add ICNUmber nvarchar(10)
+
+-- Q 15
+create unique index ICIndex on goodcustomers(ICNumber)
+/* I can not create unique index successfully because of unique index. 
+	It can be create without unique. */
+	
+-- Q 16
+create index FaxNumberIndex on goodcustomers(FaxNumber)
+
+-- Q 17
+drop index FaxNumberIndex on goodcustomers
+
+-- Q 18
+alter table goodcustomers
+drop column FaxNumber
+
+-- Q 19
+delete from goodcustomers
+
+-- Q 20
+drop table goodcustomers
+
+	/* --- End Create, Update, Delete --- */
