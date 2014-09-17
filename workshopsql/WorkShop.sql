@@ -1,5 +1,5 @@
 	/* --- select Query --- */
-
+	-- Use Northwind database
 -- Q 1-a
 select * from shippers
 
@@ -157,7 +157,7 @@ group by cus.customerid
 	/* --- End Select Query --- */
 
 	/* --- Create, Update, Delete --- */
-	-- Use DafestyVideo
+	-- Use DafestyVideo database
 
 -- Q 1
 create table MemberCategories
@@ -243,3 +243,40 @@ delete from goodcustomers
 drop table goodcustomers
 
 	/* --- End Create, Update, Delete --- */
+	
+	
+	/* --- Create View --- */
+	-- Use DafestyVideo database
+	
+create view GoodCustomer
+as select customerid, customername, membercategory, countrycode from customers where membercategory in ('A','B')
+
+	-- Use Northwind database
+	
+-- Q 1
+create view Customer1998 as
+select cus.customerid, cus.companyname, p.productid, p.productname from orders o inner join
+customers cus on cus.customerid=o.customerid inner join
+[order details] od on od.orderid=o.orderid inner join
+products p on p.productid=od.productid where year(o.orderdate)='1998'
+
+-- Q 2
+select vcus.companyname as CustomerName, vcus.productname as ProductName, s.companyname as SupplierName from customer1998 vcus left join
+products p on p.productid=vcus.productid left join
+suppliers s on s.supplierid=p.supplierid
+
+-- Q 3
+select companyname as CustomerName, count(productid) as NoofProduct from customer1998 group by companyname
+
+	/* --- End Create View --- */
+	
+
+	/* --- Store Procedure --- */
+	
+create procedure select_customers(@customerid nvarchar(7))
+as
+select * from customers where customerid=@customerid
+
+exec select_customers @customerid='AAAA'
+
+	/* --- End Store Procedure ---*/
