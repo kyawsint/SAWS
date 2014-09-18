@@ -2738,7 +2738,7 @@
 					quidu      	"5411ADEB02C8"
 					compartment 	(object Compartment
 					    Parent_View 	@29
-					    location   	(181, 509)
+					    location   	(178, 509)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2751,7 +2751,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	5
-					    max_width  	497
+					    max_width  	494
 					    justify    	0)
 					width      	230
 					height     	154
@@ -2786,7 +2786,7 @@
 					quidu      	"541305C50347"
 					compartment 	(object Compartment
 					    Parent_View 	@30
-					    location   	(803, 525)
+					    location   	(799, 525)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2799,7 +2799,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	4
-					    max_width  	469
+					    max_width  	465
 					    justify    	0)
 					width      	230
 					height     	154
@@ -2834,7 +2834,7 @@
 					quidu      	"541328DE0281"
 					compartment 	(object Compartment
 					    Parent_View 	@31
-					    location   	(1413, 525)
+					    location   	(1408, 525)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2847,7 +2847,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	4
-					    max_width  	822
+					    max_width  	819
 					    justify    	0)
 					width      	230
 					height     	154
@@ -2882,7 +2882,7 @@
 					quidu      	"541335280353"
 					compartment 	(object Compartment
 					    Parent_View 	@32
-					    location   	(2445, 525)
+					    location   	(2440, 525)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2930,7 +2930,7 @@
 					quidu      	"5415A29802F5"
 					compartment 	(object Compartment
 					    Parent_View 	@33
-					    location   	(3045, 509)
+					    location   	(3041, 509)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2943,7 +2943,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	4
-					    max_width  	625
+					    max_width  	622
 					    justify    	0)
 					width      	230
 					height     	154
@@ -2978,7 +2978,7 @@
 					quidu      	"5415A55E0311"
 					compartment 	(object Compartment
 					    Parent_View 	@34
-					    location   	(148, 1309)
+					    location   	(143, 1309)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2991,7 +2991,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	5
-					    max_width  	628
+					    max_width  	625
 					    justify    	0)
 					width      	230
 					height     	154
@@ -3026,7 +3026,7 @@
 					quidu      	"5419430603DF"
 					compartment 	(object Compartment
 					    Parent_View 	@35
-					    location   	(886, 1309)
+					    location   	(882, 1309)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3039,7 +3039,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	591
+					    max_width  	590
 					    justify    	0)
 					width      	230
 					height     	154
@@ -3083,7 +3083,7 @@
 					quidu      	"5412FAB800DB"
 					compartment 	(object Compartment
 					    Parent_View 	@36
-					    location   	(1177, 610)
+					    location   	(1173, 610)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3096,7 +3096,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	10
-					    max_width  	553
+					    max_width  	550
 					    justify    	0)
 					width      	158
 					annotation 	8
@@ -3130,7 +3130,7 @@
 					quidu      	"5411AA95007F"
 					compartment 	(object Compartment
 					    Parent_View 	@37
-					    location   	(1831, 610)
+					    location   	(1829, 610)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3143,7 +3143,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	8
-					    max_width  	813
+					    max_width  	809
 					    justify    	0)
 					width      	158
 					annotation 	8
@@ -3216,7 +3216,7 @@
 					quidu      	"5411AC1D024B"
 					compartment 	(object Compartment
 					    Parent_View 	@39
-					    location   	(81, 429)
+					    location   	(79, 429)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3229,7 +3229,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	6
-					    max_width  	763
+					    max_width  	759
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3263,7 +3263,7 @@
 					quidu      	"5411ACE20112"
 					compartment 	(object Compartment
 					    Parent_View 	@40
-					    location   	(1462, 445)
+					    location   	(1457, 445)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3276,7 +3276,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	3
-					    max_width  	597
+					    max_width  	594
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3310,7 +3310,7 @@
 					quidu      	"5411ACD30372"
 					compartment 	(object Compartment
 					    Parent_View 	@41
-					    location   	(935, 445)
+					    location   	(930, 445)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3323,7 +3323,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	400
+					    max_width  	397
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3357,7 +3357,7 @@
 					quidu      	"5411AC6F0174"
 					compartment 	(object Compartment
 					    Parent_View 	@42
-					    location   	(169, 2493)
+					    location   	(165, 2493)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3370,7 +3370,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	3
-					    max_width  	588
+					    max_width  	587
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3404,7 +3404,7 @@
 					quidu      	"5411AC8E0142"
 					compartment 	(object Compartment
 					    Parent_View 	@43
-					    location   	(896, 2493)
+					    location   	(893, 2493)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3417,7 +3417,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	350
+					    max_width  	347
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3451,7 +3451,7 @@
 					quidu      	"5411ACA7014A"
 					compartment 	(object Compartment
 					    Parent_View 	@44
-					    location   	(1440, 2509)
+					    location   	(1437, 2509)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3464,7 +3464,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	350
+					    max_width  	347
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3498,7 +3498,7 @@
 					quidu      	"5411ACBE01D2"
 					compartment 	(object Compartment
 					    Parent_View 	@45
-					    location   	(1968, 2509)
+					    location   	(1965, 2509)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3511,7 +3511,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	350
+					    max_width  	347
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3545,7 +3545,7 @@
 					quidu      	"5411AC480332"
 					compartment 	(object Compartment
 					    Parent_View 	@46
-					    location   	(194, 1883)
+					    location   	(190, 1885)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3558,7 +3558,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	4
-					    max_width  	538
+					    max_width  	534
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3592,7 +3592,7 @@
 					quidu      	"5411AD120142"
 					compartment 	(object Compartment
 					    Parent_View 	@47
-					    location   	(1638, 1915)
+					    location   	(1634, 1917)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3605,7 +3605,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	3
-					    max_width  	338
+					    max_width  	337
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3639,7 +3639,7 @@
 					quidu      	"5411ACF901D3"
 					compartment 	(object Compartment
 					    Parent_View 	@48
-					    location   	(849, 1899)
+					    location   	(845, 1901)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3652,7 +3652,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	2
-					    max_width  	475
+					    max_width  	472
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3686,7 +3686,7 @@
 					quidu      	"5411AC0D03D3"
 					compartment 	(object Compartment
 					    Parent_View 	@49
-					    location   	(284, 1211)
+					    location   	(281, 1213)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3699,7 +3699,7 @@
 					    icon_style 	"Icon"
 					    anchor     	2
 					    nlines     	3
-					    max_width  	453
+					    max_width  	450
 					    justify    	0)
 					height     	154
 					annotation 	8
@@ -3733,7 +3733,7 @@
 					quidu      	"5411AC2A0383"
 					compartment 	(object Compartment
 					    Parent_View 	@50
-					    location   	(927, 1195)
+					    location   	(922, 1197)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3788,7 +3788,7 @@
 				zoom       	85
 				max_height 	28350
 				max_width  	21600
-				origin_x   	8949
+				origin_x   	8948
 				origin_y   	10288
 				items      	(list diagram_item_list
 				    (object InterObjView "$UNNAMED$3" @52
@@ -4671,7 +4671,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5417E162015D"
-					width      	736
+					width      	154
 					height     	7768
 					icon_height 	153
 					icon_width 	154
@@ -4708,7 +4708,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5417E16E032C"
-					width      	598
+					width      	154
 					height     	7768
 					icon_height 	153
 					icon_width 	154
@@ -4745,7 +4745,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5417E1740164"
-					width      	652
+					width      	154
 					height     	7768
 					icon_height 	153
 					icon_width 	154
@@ -4774,7 +4774,7 @@
 					    location   	(10288, 344)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	386
+					    max_width  	687
 					    justify    	0
 					    label      	"")
 					icon       	"boundary"
@@ -4782,7 +4782,7 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"541712BB02F2"
-					width      	398
+					width      	534
 					height     	7672
 					icon_height 	153
 					icon_width 	229
@@ -4875,7 +4875,7 @@
 					    y_coord    	0
 					    Nested     	FALSE))
 				    (object InterObjView "$UNNAMED$20" @141
-					location   	(10720, 240)
+					location   	(10864, 240)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -4887,10 +4887,10 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@141
-					    location   	(10720, 263)
+					    location   	(10864, 263)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	324
+					    max_width  	474
 					    justify    	0
 					    label      	"")
 					icon       	"actor"
@@ -4898,14 +4898,14 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5419437103A3"
-					width      	300
+					width      	486
 					height     	7752
-					icon_height 	150
-					icon_width 	108
+					icon_height 	162
+					icon_width 	120
 					icon_y_offset 	0
 					annotation 	1
 					Focus_Of_Control 	(object Focus_Of_Control "" @142
-					    location   	(10720, 6464)
+					    location   	(10864, 6464)
 					    line_color 	3342489
 					    InterObjView 	@141
 					    height     	90
@@ -7244,7 +7244,7 @@
 					    default_color 	TRUE)
 					label      	(object SegLabel @262
 					    Parent_View 	@261
-					    location   	(10503, 6415)
+					    location   	(10575, 6415)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -7269,7 +7269,7 @@
 					Focus_Src  	@133
 					Focus_Entry 	@142
 					origin     	(10303, 6459)
-					terminus   	(10704, 6459)
+					terminus   	(10848, 6459)
 					ordinal    	44)))
 			    (object InteractionDiagram "FindBooking"
 				mechanism_ref 	@28
@@ -8483,7 +8483,7 @@
 					supplier   	@357
 					vertices   	(list Points
 					    (649, 1158)
-					    (864, 1249))
+					    (814, 1227))
 					line_style 	0)
 				    (object InterMessView "getBookingDetails( )" @360
 					location   	(16, 1408)
@@ -8846,7 +8846,7 @@
 					supplier   	@373
 					vertices   	(list Points
 					    (869, 2165)
-					    (1632, 1759))
+					    (1592, 1781))
 					line_style 	0)
 				    (object InterMessView "BookingforCustomerUI( )" @380
 					location   	(16, 2176)

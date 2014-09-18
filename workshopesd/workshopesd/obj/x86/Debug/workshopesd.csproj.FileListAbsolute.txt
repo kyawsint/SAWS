@@ -1,0 +1,8 @@
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
