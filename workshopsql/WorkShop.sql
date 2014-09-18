@@ -154,6 +154,10 @@ where o.customerid=cus.customerid and o.orderid=od.orderid and year(o.orderdate)
 group by cus.customerid
 
 
+/* --- End Select Query --- */
+
+/* --- Start Create, Update, Delete --- */
+-- Use DafestyVideo
 	/* --- End Select Query --- */
 
 	/* --- Create, Update, Delete --- */
@@ -183,6 +187,8 @@ create table GoodCustomers
 )
 
 -- Q 4
+
+select * from Customers
 insert into GoodCustomers(CustomerName, Address, PhoneNumber, MemberCategory) 
 select CustomerName, Address, PhoneNumber, MemberCategory from Customers where MemberCategory in ('A','B')
 
@@ -268,15 +274,39 @@ suppliers s on s.supplierid=p.supplierid
 -- Q 3
 select companyname as CustomerName, count(productid) as NoofProduct from customer1998 group by companyname
 
+-- Q 4-a
+create view UserView as
+select o.CustomerID as CustomerID,sum(od.UnitPrice*od.Quantity) as Amount from orders o left join
+[order details] od on od.orderid=o.orderid
+group by o.CustomerID
+
+-- Q 4-b
+select AVG(amount) from UserView
+
 	/* --- End Create View --- */
 	
 
 	/* --- Store Procedure --- */
-	
+	-- Use DafestyVideo
 create procedure select_customers(@customerid nvarchar(7))
 as
 select * from customers where customerid=@customerid
 
 exec select_customers @customerid='AAAA'
+
+-- Q 1
+create procedure catAList(@category varchar(3))
+as
+select * from Customers where membercategory=@category
+
+exec catAList @category='A'
+
+-- Q 2
+create procedure memCatList(@memcat varchar(3))
+as
+select * from customers where membercategory=@memcat
+
+exec memCatList @memcat='B'
+exec memCatList @memcat='Z'
 
 	/* --- End Store Procedure ---*/

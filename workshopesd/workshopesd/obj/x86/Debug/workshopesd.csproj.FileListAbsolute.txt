@@ -6,3 +6,5 @@ C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.
 C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
 C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
 C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
