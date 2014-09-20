@@ -89,7 +89,6 @@
             this.Controls.Add(this.lblvideo_code);
             this.Name = "Ex_1_1";
             this.Text = "Change Video Rental Price";
-            //this.Load += new System.EventHandler(this.Ex_1_1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Eg2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg2.Designer.cs">
+      <DependentUpon>Eg2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg3.Designer.cs">
+      <DependentUpon>Eg3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ex_1_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,12 @@
     <Compile Include="Ex_1_2.Designer.cs">
       <DependentUpon>Ex_1_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ex_Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex_Video.Designer.cs">
+      <DependentUpon>Ex_Video.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +84,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Eg2.resx">
+      <DependentUpon>Eg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg3.resx">
+      <DependentUpon>Eg3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ex_1_1.resx">
       <DependentUpon>Ex_1_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ex_1_2.resx">
       <DependentUpon>Ex_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex_Video.resx">
+      <DependentUpon>Ex_Video.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

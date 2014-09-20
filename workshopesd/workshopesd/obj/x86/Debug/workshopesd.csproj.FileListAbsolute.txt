@@ -8,3 +8,12 @@ C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshop
 C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
