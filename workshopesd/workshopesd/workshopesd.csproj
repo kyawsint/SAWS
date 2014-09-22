@@ -58,6 +58,18 @@
     <Compile Include="Eg3.Designer.cs">
       <DependentUpon>Eg3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eg5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg5.Designer.cs">
+      <DependentUpon>Eg5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg6.Designer.cs">
+      <DependentUpon>Eg6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ex_1_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Eg3.resx">
       <DependentUpon>Eg3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg5.resx">
+      <DependentUpon>Eg5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg6.resx">
+      <DependentUpon>Eg6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ex_1_1.resx">
       <DependentUpon>Ex_1_1.cs</DependentUpon>

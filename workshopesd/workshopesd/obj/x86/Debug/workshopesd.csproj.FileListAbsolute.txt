@@ -17,3 +17,5 @@ D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Pr
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
