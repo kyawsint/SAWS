@@ -19,3 +19,17 @@ D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
 D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache

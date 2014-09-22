@@ -70,6 +70,12 @@
     <Compile Include="Eg6.Designer.cs">
       <DependentUpon>Eg6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eg7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg7.Designer.cs">
+      <DependentUpon>Eg7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ex_1_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Eg6.resx">
       <DependentUpon>Eg6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg7.resx">
+      <DependentUpon>Eg7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ex_1_1.resx">
       <DependentUpon>Ex_1_1.cs</DependentUpon>
