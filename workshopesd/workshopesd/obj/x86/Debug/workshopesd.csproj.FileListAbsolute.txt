@@ -33,3 +33,8 @@ C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug
 C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
 C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
 C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe.config
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg8.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoIssueForm.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoLookUp.resources

@@ -15,7 +15,7 @@ namespace workshopesd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Eg7());
+            Application.Run(new VideoIssueForm());
         }
     }
 }
