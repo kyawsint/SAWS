@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DafestyVKModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DafestyVKEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ControlTables" EntityType="DafestyVKModel.ControlTable" />
+    <EntitySet Name="Countries" EntityType="DafestyVKModel.Country" />
+    <EntitySet Name="CustomerContacts" EntityType="DafestyVKModel.CustomerContact" />
+    <EntitySet Name="Customers" EntityType="DafestyVKModel.Customer" />
+    <EntitySet Name="Documentaries" EntityType="DafestyVKModel.Documentary" />
+    <EntitySet Name="Employees" EntityType="DafestyVKModel.Employee" />
+    <EntitySet Name="EmployeesBackups" EntityType="DafestyVKModel.EmployeesBackup" />
+    <EntitySet Name="IssueTrans" EntityType="DafestyVKModel.IssueTran" />
+    <EntitySet Name="MemberCategories" EntityType="DafestyVKModel.MemberCategory" />
+    <EntitySet Name="Movies" EntityType="DafestyVKModel.Movie" />
+    <EntitySet Name="Producers" EntityType="DafestyVKModel.Producer" />
+    <EntitySet Name="ProducerWebSites" EntityType="DafestyVKModel.ProducerWebSite" />
+    <EntitySet Name="SalaryHistories" EntityType="DafestyVKModel.SalaryHistory" />
+    <EntitySet Name="StockAdjustments" EntityType="DafestyVKModel.StockAdjustment" />
+    <EntitySet Name="sysdiagrams" EntityType="DafestyVKModel.sysdiagram" />
+    <EntitySet Name="UserMasters" EntityType="DafestyVKModel.UserMaster" />
+    <AssociationSet Name="FK_Customers_Country" Association="DafestyVKModel.FK_Customers_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerContact_Customers" Association="DafestyVKModel.FK_CustomerContact_Customers">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="CustomerContact" EntitySet="CustomerContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueTran_Customers" Association="DafestyVKModel.FK_IssueTran_Customers">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="IssueTran" EntitySet="IssueTrans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueTran_Movies1" Association="DafestyVKModel.FK_IssueTran_Movies1">
+      <End Role="Movie" EntitySet="Movies" />
+      <End Role="IssueTran" EntitySet="IssueTrans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Producers" Association="DafestyVKModel.FK_Movies_Producers">
+      <End Role="Producer" EntitySet="Producers" />
+      <End Role="Movie" EntitySet="Movies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_Movies" Association="DafestyVKModel.FK_StockAdjustment_Movies">
+      <End Role="Movie" EntitySet="Movies" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProducerWebSite_Producers" Association="DafestyVKModel.FK_ProducerWebSite_Producers">
+      <End Role="Producer" EntitySet="Producers" />
+      <End Role="ProducerWebSite" EntitySet="ProducerWebSites" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ControlTable">
+    <Key>
+      <PropertyRef Name="NumberType" />
+    </Key>
+    <Property Type="String" Name="NumberType" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FirstFreeNo" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Type="String" Name="CountryCode" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountryName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Currency" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TimeZone" />
+    <NavigationProperty Name="Customers" Relationship="DafestyVKModel.FK_Customers_Country" FromRole="Country" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="CustomerContact">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Type="String" Name="CustomerID" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomeName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TelephoneNo" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer" Relationship="DafestyVKModel.FK_CustomerContact_Customers" FromRole="CustomerContact" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Type="String" Name="CustomerID" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MemberCategory" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="65" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OldPostalCode" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PostalCode" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountryCode" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactTitle" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhoneNumber" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Extension" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FaxNumber" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailAddress" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Notes" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Country" Relationship="DafestyVKModel.FK_Customers_Country" FromRole="Customer" ToRole="Country" />
+    <NavigationProperty Name="CustomerContact" Relationship="DafestyVKModel.FK_CustomerContact_Customers" FromRole="Customer" ToRole="CustomerContact" />
+    <NavigationProperty Name="IssueTrans" Relationship="DafestyVKModel.FK_IssueTran_Customers" FromRole="Customer" ToRole="IssueTran" />
+  </EntityType>
+  <EntityType Name="Documentary">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Type="Int16" Name="VideoCode" Nullable="false" />
+    <Property Type="String" Name="VideoTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MovieType" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Rating" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="Single" Name="Price" />
+    <Property Type="String" Name="Producer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Director" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Media" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="TotalStock" />
+    <Property Type="Int16" Name="NumberRented" />
+    <Property Type="Int16" Name="PreviousEpisode" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="String" Name="EmployeeID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Age" />
+    <Property Type="Double" Name="Salary" />
+  </EntityType>
+  <EntityType Name="EmployeesBackup">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="String" Name="EmployeeID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Age" />
+    <Property Type="Double" Name="Salary" />
+  </EntityType>
+  <EntityType Name="IssueTran">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int16" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CustomerID" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="VideoCode" />
+    <Property Type="DateTime" Name="DateIssue" />
+    <Property Type="DateTime" Name="DateDue" />
+    <Property Type="DateTime" Name="DateActualReturn" />
+    <Property Type="String" Name="RentalStatus" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer" Relationship="DafestyVKModel.FK_IssueTran_Customers" FromRole="IssueTran" ToRole="Customer" />
+    <NavigationProperty Name="Movie" Relationship="DafestyVKModel.FK_IssueTran_Movies1" FromRole="IssueTran" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="MemberCategory">
+    <Key>
+      <PropertyRef Name="MemberCategory1" />
+    </Key>
+    <Property Type="String" Name="MemberCategory1" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MemberCatDescription" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Type="Int16" Name="VideoCode" Nullable="false" />
+    <Property Type="String" Name="MovieTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MovieType" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Rating" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="Single" Name="RentalPrice" />
+    <Property Type="String" Name="Producer" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Director" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Media" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="TotalStock" />
+    <Property Type="Int16" Name="NumberRented" />
+    <NavigationProperty Name="IssueTrans" Relationship="DafestyVKModel.FK_IssueTran_Movies1" FromRole="Movie" ToRole="IssueTran" />
+    <NavigationProperty Name="Producer1" Relationship="DafestyVKModel.FK_Movies_Producers" FromRole="Movie" ToRole="Producer" />
+    <NavigationProperty Name="StockAdjustments" Relationship="DafestyVKModel.FK_StockAdjustment_Movies" FromRole="Movie" ToRole="StockAdjustment" />
+  </EntityType>
+  <EntityType Name="Producer">
+    <Key>
+      <PropertyRef Name="Producer1" />
+    </Key>
+    <Property Type="String" Name="Producer1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProducerName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountryCode" MaxLength="3" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Movies" Relationship="DafestyVKModel.FK_Movies_Producers" FromRole="Producer" ToRole="Movie" />
+    <NavigationProperty Name="ProducerWebSite" Relationship="DafestyVKModel.FK_ProducerWebSite_Producers" FromRole="Producer" ToRole="ProducerWebSite" />
+  </EntityType>
+  <EntityType Name="ProducerWebSite">
+    <Key>
+      <PropertyRef Name="Producer" />
+    </Key>
+    <Property Type="String" Name="Producer" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Producer1" Relationship="DafestyVKModel.FK_ProducerWebSite_Producers" FromRole="ProducerWebSite" ToRole="Producer" />
+  </EntityType>
+  <EntityType Name="SalaryHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="String" Name="EmployeeID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Salary" />
+    <Property Type="DateTime" Name="DateArchived" />
+  </EntityType>
+  <EntityType Name="StockAdjustment">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+      <PropertyRef Name="DateAdjusted" />
+    </Key>
+    <Property Type="Int16" Name="VideoCode" Nullable="false" />
+    <Property Type="Int32" Name="AdjustmentQty" />
+    <Property Type="DateTime" Name="DateAdjusted" Nullable="false" />
+    <Property Type="String" Name="WhoAdjust" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AdjustReason" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Movie" Relationship="DafestyVKModel.FK_StockAdjustment_Movies" FromRole="StockAdjustment" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="LoginName" />
+    </Key>
+    <Property Type="String" Name="LoginName" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Customers_Country">
+    <End Type="DafestyVKModel.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="DafestyVKModel.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryCode" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerContact_Customers">
+    <End Type="DafestyVKModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="DafestyVKModel.CustomerContact" Role="CustomerContact" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerContact">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueTran_Customers">
+    <End Type="DafestyVKModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="DafestyVKModel.IssueTran" Role="IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueTran_Movies1">
+    <End Type="DafestyVKModel.Movie" Role="Movie" Multiplicity="0..1" />
+    <End Type="DafestyVKModel.IssueTran" Role="IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Producers">
+    <End Type="DafestyVKModel.Producer" Role="Producer" Multiplicity="0..1" />
+    <End Type="DafestyVKModel.Movie" Role="Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producer">
+        <PropertyRef Name="Producer1" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Producer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_Movies">
+    <End Type="DafestyVKModel.Movie" Role="Movie" Multiplicity="1" />
+    <End Type="DafestyVKModel.StockAdjustment" Role="StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProducerWebSite_Producers">
+    <End Type="DafestyVKModel.Producer" Role="Producer" Multiplicity="1" />
+    <End Type="DafestyVKModel.ProducerWebSite" Role="ProducerWebSite" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Producer">
+        <PropertyRef Name="Producer1" />
+      </Principal>
+      <Dependent Role="ProducerWebSite">
+        <PropertyRef Name="Producer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

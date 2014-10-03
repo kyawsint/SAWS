@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DafestyVKModelStoreContainer" CdmEntityContainer="DafestyVKEntities">
+    <EntitySetMapping Name="ControlTables">
+      <EntityTypeMapping TypeName="DafestyVKModel.ControlTable">
+        <MappingFragment StoreEntitySet="ControlTable">
+          <ScalarProperty Name="FirstFreeNo" ColumnName="FirstFreeNo" />
+          <ScalarProperty Name="NumberType" ColumnName="NumberType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="DafestyVKModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerContacts">
+      <EntityTypeMapping TypeName="DafestyVKModel.CustomerContact">
+        <MappingFragment StoreEntitySet="CustomerContact">
+          <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
+          <ScalarProperty Name="CustomeName" ColumnName="CustomeName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DafestyVKModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="OldPostalCode" ColumnName="OldPostalCode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MemberCategory" ColumnName="MemberCategory" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documentaries">
+      <EntityTypeMapping TypeName="DafestyVKModel.Documentary">
+        <MappingFragment StoreEntitySet="Documentaries">
+          <ScalarProperty Name="PreviousEpisode" ColumnName="PreviousEpisode" />
+          <ScalarProperty Name="NumberRented" ColumnName="NumberRented" />
+          <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+          <ScalarProperty Name="Media" ColumnName="Media" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+          <ScalarProperty Name="Producer" ColumnName="Producer" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="MovieType" ColumnName="MovieType" />
+          <ScalarProperty Name="VideoTitle" ColumnName="VideoTitle" />
+          <ScalarProperty Name="VideoCode" ColumnName="VideoCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="DafestyVKModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeesBackups">
+      <EntityTypeMapping TypeName="DafestyVKModel.EmployeesBackup">
+        <MappingFragment StoreEntitySet="EmployeesBackup">
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IssueTrans">
+      <EntityTypeMapping TypeName="DafestyVKModel.IssueTran">
+        <MappingFragment StoreEntitySet="IssueTran">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RentalStatus" ColumnName="RentalStatus" />
+          <ScalarProperty Name="DateActualReturn" ColumnName="DateActualReturn" />
+          <ScalarProperty Name="DateDue" ColumnName="DateDue" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="VideoCode" ColumnName="VideoCode" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberCategories">
+      <EntityTypeMapping TypeName="DafestyVKModel.MemberCategory">
+        <MappingFragment StoreEntitySet="MemberCategories">
+          <ScalarProperty Name="MemberCatDescription" ColumnName="MemberCatDescription" />
+          <ScalarProperty Name="MemberCategory1" ColumnName="MemberCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="DafestyVKModel.Movie">
+        <MappingFragment StoreEntitySet="Movies">
+          <ScalarProperty Name="NumberRented" ColumnName="NumberRented" />
+          <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+          <ScalarProperty Name="Media" ColumnName="Media" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+          <ScalarProperty Name="Producer" ColumnName="Producer" />
+          <ScalarProperty Name="RentalPrice" ColumnName="RentalPrice" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="MovieType" ColumnName="MovieType" />
+          <ScalarProperty Name="MovieTitle" ColumnName="MovieTitle" />
+          <ScalarProperty Name="VideoCode" ColumnName="VideoCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producers">
+      <EntityTypeMapping TypeName="DafestyVKModel.Producer">
+        <MappingFragment StoreEntitySet="Producers">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="ProducerName" ColumnName="ProducerName" />
+          <ScalarProperty Name="Producer1" ColumnName="Producer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProducerWebSites">
+      <EntityTypeMapping TypeName="DafestyVKModel.ProducerWebSite">
+        <MappingFragment StoreEntitySet="ProducerWebSite">
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Producer" ColumnName="Producer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalaryHistories">
+      <EntityTypeMapping TypeName="DafestyVKModel.SalaryHistory">
+        <MappingFragment StoreEntitySet="SalaryHistory">
+          <ScalarProperty Name="DateArchived" ColumnName="DateArchived" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockAdjustments">
+      <EntityTypeMapping TypeName="DafestyVKModel.StockAdjustment">
+        <MappingFragment StoreEntitySet="StockAdjustment">
+          <ScalarProperty Name="AdjustReason" ColumnName="AdjustReason" />
+          <ScalarProperty Name="WhoAdjust" ColumnName="WhoAdjust" />
+          <ScalarProperty Name="DateAdjusted" ColumnName="DateAdjusted" />
+          <ScalarProperty Name="AdjustmentQty" ColumnName="AdjustmentQty" />
+          <ScalarProperty Name="VideoCode" ColumnName="VideoCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DafestyVKModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMasters">
+      <EntityTypeMapping TypeName="DafestyVKModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMaster">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

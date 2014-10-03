@@ -1,0 +1,50 @@
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\bin\Debug\EFEX.exe.config
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\bin\Debug\EFEX.exe
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\bin\Debug\EFEX.pdb
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.Form1.resources
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.Properties.Resources.resources
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.VideoIssueForm.resources
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.VideoLookUp.resources
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.csproj.GenerateResource.Cache
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.exe
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.pdb
+C:\Users\a0132516n\Downloads\KyawSint\EFEX\EFEX\obj\x86\Debug\EFEX.CustomerLookUp.resources
+F:\KS\EFEX\EFEX\bin\Debug\EFEX.exe.config
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.exe
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.pdb
+F:\KS\EFEX\EFEX\bin\Debug\EFEX.exe
+F:\KS\EFEX\EFEX\bin\Debug\EFEX.pdb
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.CustomerLookUp.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.Form1.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.Properties.Resources.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoIssueForm.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoLookUp.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoMain.resources
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.csproj.GenerateResource.Cache
+F:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoReturn.resources
+I:\KS\EFEX\EFEX\bin\Debug\EFEX.exe.config
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.exe
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.CustomerLookUp.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.Form1.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.Properties.Resources.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoIssueForm.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoLookUp.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.Main.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.VideoReturn.resources
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.csproj.GenerateResource.Cache
+I:\KS\EFEX\EFEX\bin\Debug\EFEX.exe
+I:\KS\EFEX\EFEX\bin\Debug\EFEX.pdb
+I:\KS\EFEX\EFEX\obj\x86\Debug\EFEX.pdb
+D:\ISS Workshop\C#\EFEX\EFEX\bin\Debug\EFEX.exe.config
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.exe
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.pdb
+D:\ISS Workshop\C#\EFEX\EFEX\bin\Debug\EFEX.exe
+D:\ISS Workshop\C#\EFEX\EFEX\bin\Debug\EFEX.pdb
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.CustomerLookUp.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.Form1.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.Properties.Resources.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.VideoIssueForm.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.VideoLookUp.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.Main.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.VideoReturn.resources
+D:\ISS Workshop\C#\EFEX\EFEX\obj\x86\Debug\EFEX.csproj.GenerateResource.Cache

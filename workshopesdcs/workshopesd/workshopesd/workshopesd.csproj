@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06AF65C5-F95C-4D9E-8518-42823F4E34FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>workshopesd</RootNamespace>
+    <AssemblyName>workshopesd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLookUp.Designer.cs">
+      <DependentUpon>CustomerLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DafestyVKDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DafestyVKDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eg2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg2.Designer.cs">
+      <DependentUpon>Eg2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg3.Designer.cs">
+      <DependentUpon>Eg3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg5.Designer.cs">
+      <DependentUpon>Eg5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg6.Designer.cs">
+      <DependentUpon>Eg6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg7.Designer.cs">
+      <DependentUpon>Eg7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eg8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eg8.Designer.cs">
+      <DependentUpon>Eg8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex_1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex_1_1.Designer.cs">
+      <DependentUpon>Ex_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex_1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex_1_2.Designer.cs">
+      <DependentUpon>Ex_1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex_Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex_Video.Designer.cs">
+      <DependentUpon>Ex_Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VideoIssue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VideoIssue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VideoIssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoIssueForm.Designer.cs">
+      <DependentUpon>VideoIssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoLookUp.Designer.cs">
+      <DependentUpon>VideoLookUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomerLookUp.resx">
+      <DependentUpon>CustomerLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg2.resx">
+      <DependentUpon>Eg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg3.resx">
+      <DependentUpon>Eg3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg5.resx">
+      <DependentUpon>Eg5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg6.resx">
+      <DependentUpon>Eg6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg7.resx">
+      <DependentUpon>Eg7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eg8.resx">
+      <DependentUpon>Eg8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex_1_1.resx">
+      <DependentUpon>Ex_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex_1_2.resx">
+      <DependentUpon>Ex_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex_Video.resx">
+      <DependentUpon>Ex_Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VideoIssueForm.resx">
+      <DependentUpon>VideoIssueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoLookUp.resx">
+      <DependentUpon>VideoLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DafestyVKDataSet.xsc">
+      <DependentUpon>DafestyVKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DafestyVKDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DafestyVKDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DafestyVKDataSet.xss">
+      <DependentUpon>DafestyVKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VideoIssue.xsc">
+      <DependentUpon>VideoIssue.xsd</DependentUpon>
+    </None>
+    <None Include="VideoIssue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VideoIssue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VideoIssue.xss">
+      <DependentUpon>VideoIssue.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

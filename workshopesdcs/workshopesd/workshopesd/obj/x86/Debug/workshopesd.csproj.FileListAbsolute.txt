@@ -1,0 +1,81 @@
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+C:\Users\a0132516n\Downloads\KyawSint\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\bin\Debug\workshopesd.exe.config
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg8.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoIssueForm.resources
+D:\ISS Workshop\github\SAWS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoLookUp.resources
+F:\workshopesd\workshopesd\bin\Debug\workshopesd.exe.config
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+F:\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+F:\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg8.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoIssueForm.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoLookUp.resources
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+F:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csprojResolveAssemblyReference.cache
+I:\workshopesd\workshopesd\bin\Debug\workshopesd.exe.config
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb
+I:\workshopesd\workshopesd\bin\Debug\workshopesd.exe
+I:\workshopesd\workshopesd\bin\Debug\workshopesd.pdb
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg2.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg3.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg5.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg6.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg7.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Eg8.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_1.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_1_2.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Ex_Video.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.Properties.Resources.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoIssueForm.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.VideoLookUp.resources
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.csproj.GenerateResource.Cache
+I:\workshopesd\workshopesd\obj\x86\Debug\workshopesd.CustomerLookUp.resources
+F:\KS\workshopesd\workshopesd\bin\Debug\workshopesd.exe.config
+F:\KS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.exe
+F:\KS\workshopesd\workshopesd\obj\x86\Debug\workshopesd.pdb

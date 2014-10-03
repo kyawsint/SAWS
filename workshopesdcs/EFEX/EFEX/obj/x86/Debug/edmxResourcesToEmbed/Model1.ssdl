@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DafestyVKModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DafestyVKModelStoreContainer">
+    <EntitySet Name="ControlTable" EntityType="DafestyVKModel.Store.ControlTable" store:Type="Tables" store:Schema="dbo" store:Name="ControlTable">
+      <DefiningQuery>SELECT 
+      [ControlTable].[NumberType] AS [NumberType], 
+      [ControlTable].[FirstFreeNo] AS [FirstFreeNo]
+      FROM [dbo].[ControlTable] AS [ControlTable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Country" EntityType="DafestyVKModel.Store.Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerContact" EntityType="DafestyVKModel.Store.CustomerContact" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customers" EntityType="DafestyVKModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Documentaries" EntityType="DafestyVKModel.Store.Documentaries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employees" EntityType="DafestyVKModel.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmployeesBackup" EntityType="DafestyVKModel.Store.EmployeesBackup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IssueTran" EntityType="DafestyVKModel.Store.IssueTran" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MemberCategories" EntityType="DafestyVKModel.Store.MemberCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Movies" EntityType="DafestyVKModel.Store.Movies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Producers" EntityType="DafestyVKModel.Store.Producers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProducerWebSite" EntityType="DafestyVKModel.Store.ProducerWebSite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalaryHistory" EntityType="DafestyVKModel.Store.SalaryHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockAdjustment" EntityType="DafestyVKModel.Store.StockAdjustment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="DafestyVKModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserMaster" EntityType="DafestyVKModel.Store.UserMaster" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CustomerContact_Customers" Association="DafestyVKModel.Store.FK_CustomerContact_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="CustomerContact" EntitySet="CustomerContact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Country" Association="DafestyVKModel.Store.FK_Customers_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueTran_Customers" Association="DafestyVKModel.Store.FK_IssueTran_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="IssueTran" EntitySet="IssueTran" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueTran_Movies1" Association="DafestyVKModel.Store.FK_IssueTran_Movies1">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="IssueTran" EntitySet="IssueTran" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Producers" Association="DafestyVKModel.Store.FK_Movies_Producers">
+      <End Role="Producers" EntitySet="Producers" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProducerWebSite_Producers" Association="DafestyVKModel.Store.FK_ProducerWebSite_Producers">
+      <End Role="Producers" EntitySet="Producers" />
+      <End Role="ProducerWebSite" EntitySet="ProducerWebSite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockAdjustment_Movies" Association="DafestyVKModel.Store.FK_StockAdjustment_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="StockAdjustment" EntitySet="StockAdjustment" />
+    </AssociationSet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DafestyVK.dbo.ControlTable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ControlTable">
+    <Key>
+      <PropertyRef Name="NumberType" />
+    </Key>
+    <Property Name="NumberType" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="FirstFreeNo" Type="int" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="CountryCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+    <Property Name="CountryName" Type="nvarchar" MaxLength="20" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="4" />
+    <Property Name="TimeZone" Type="int" />
+  </EntityType>
+  <EntityType Name="CustomerContact">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="CustomeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TelephoneNo" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MemberCategory" Type="nvarchar" MaxLength="2" />
+    <Property Name="Address" Type="nvarchar" MaxLength="65" />
+    <Property Name="City" Type="nvarchar" MaxLength="30" />
+    <Property Name="OldPostalCode" Type="nvarchar" MaxLength="4" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="6" />
+    <Property Name="CountryCode" Type="nvarchar" MaxLength="3" />
+    <Property Name="ContactTitle" Type="nvarchar" MaxLength="2" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="9" />
+    <Property Name="Extension" Type="nvarchar" MaxLength="5" />
+    <Property Name="FaxNumber" Type="nvarchar" MaxLength="30" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Documentaries">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Name="VideoCode" Type="smallint" Nullable="false" />
+    <Property Name="VideoTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="MovieType" Type="nvarchar" MaxLength="30" />
+    <Property Name="Rating" Type="nvarchar" MaxLength="3" />
+    <Property Name="Price" Type="real" />
+    <Property Name="Producer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Director" Type="nvarchar" MaxLength="50" />
+    <Property Name="Media" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalStock" Type="smallint" />
+    <Property Name="NumberRented" Type="smallint" />
+    <Property Name="PreviousEpisode" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="10" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Salary" Type="float" />
+  </EntityType>
+  <EntityType Name="EmployeesBackup">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="10" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Salary" Type="float" />
+  </EntityType>
+  <EntityType Name="IssueTran">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="4" />
+    <Property Name="VideoCode" Type="smallint" />
+    <Property Name="DateIssue" Type="datetime" />
+    <Property Name="DateDue" Type="datetime" />
+    <Property Name="DateActualReturn" Type="datetime" />
+    <Property Name="RentalStatus" Type="nvarchar" MaxLength="3" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MemberCategories">
+    <Key>
+      <PropertyRef Name="MemberCategory" />
+    </Key>
+    <Property Name="MemberCategory" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="MemberCatDescription" Type="nvarchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Name="VideoCode" Type="smallint" Nullable="false" />
+    <Property Name="MovieTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="MovieType" Type="nvarchar" MaxLength="10" />
+    <Property Name="Rating" Type="nvarchar" MaxLength="3" />
+    <Property Name="RentalPrice" Type="real" />
+    <Property Name="Producer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Director" Type="nvarchar" MaxLength="50" />
+    <Property Name="Media" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalStock" Type="smallint" />
+    <Property Name="NumberRented" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Producers">
+    <Key>
+      <PropertyRef Name="Producer" />
+    </Key>
+    <Property Name="Producer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProducerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryCode" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="ProducerWebSite">
+    <Key>
+      <PropertyRef Name="Producer" />
+    </Key>
+    <Property Name="Producer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Website" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SalaryHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Salary" Type="float" />
+    <Property Name="DateArchived" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StockAdjustment">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+      <PropertyRef Name="DateAdjusted" />
+    </Key>
+    <Property Name="VideoCode" Type="smallint" Nullable="false" />
+    <Property Name="AdjustmentQty" Type="int" />
+    <Property Name="DateAdjusted" Type="datetime" Nullable="false" />
+    <Property Name="WhoAdjust" Type="nvarchar" MaxLength="20" />
+    <Property Name="AdjustReason" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="LoginName" />
+    </Key>
+    <Property Name="LoginName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Password" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_CustomerContact_Customers">
+    <End Role="Customers" Type="DafestyVKModel.Store.Customers" Multiplicity="1" />
+    <End Role="CustomerContact" Type="DafestyVKModel.Store.CustomerContact" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CustomerContact">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Country">
+    <End Role="Country" Type="DafestyVKModel.Store.Country" Multiplicity="0..1" />
+    <End Role="Customers" Type="DafestyVKModel.Store.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryCode" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueTran_Customers">
+    <End Role="Customers" Type="DafestyVKModel.Store.Customers" Multiplicity="0..1" />
+    <End Role="IssueTran" Type="DafestyVKModel.Store.IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueTran_Movies1">
+    <End Role="Movies" Type="DafestyVKModel.Store.Movies" Multiplicity="0..1" />
+    <End Role="IssueTran" Type="DafestyVKModel.Store.IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Producers">
+    <End Role="Producers" Type="DafestyVKModel.Store.Producers" Multiplicity="0..1" />
+    <End Role="Movies" Type="DafestyVKModel.Store.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producers">
+        <PropertyRef Name="Producer" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="Producer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProducerWebSite_Producers">
+    <End Role="Producers" Type="DafestyVKModel.Store.Producers" Multiplicity="1" />
+    <End Role="ProducerWebSite" Type="DafestyVKModel.Store.ProducerWebSite" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Producers">
+        <PropertyRef Name="Producer" />
+      </Principal>
+      <Dependent Role="ProducerWebSite">
+        <PropertyRef Name="Producer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockAdjustment_Movies">
+    <End Role="Movies" Type="DafestyVKModel.Store.Movies" Multiplicity="1" />
+    <End Role="StockAdjustment" Type="DafestyVKModel.Store.StockAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="StockAdjustment">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="MyProc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MC" Type="nvarchar" Mode="In" />
+    <Parameter Name="CID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>
